@@ -1,0 +1,59 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+.env
+.env/
+.env.*
+
+# =========================
+# Django
+# =========================
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Coleta de arquivos estáticos
+staticfiles/
+
+# =========================
+# Migrations (opcional)
+# =========================
+# Descomente se NÃO quiser versionar migrations
+# */migrations/__pycache__/
+# */migrations/*.pyc
+
+# =========================
+# Testes e cobertura
+# =========================
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# =========================
+# IDEs / Editores
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs e dumps
+# =========================
+*.sqlite3
+*.dump

@@ -3,7 +3,7 @@ from actors.models import Actor
 from genres.models import Genre
 
 
-class Movies(models.Model):
+class Movie(models.Model):
     title = models.CharField(max_length=500)
     genre = models.ForeignKey(
         Genre, 

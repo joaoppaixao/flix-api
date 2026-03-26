@@ -8,8 +8,8 @@ urlpatterns = [
     # prefixo de URL de generos
     path('api/v1/', include('genres.urls')),
 
-   # prefixo de URL de atores
-   path('api/v1/', include('actors.urls')),
+    # prefixo de URL de atores
+    path('api/v1/', include('actors.urls')),
 
     # prefixo de URL de filmes
     path('api/v1/', include('movies.urls')),

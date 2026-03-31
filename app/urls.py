@@ -5,6 +5,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 
+    # prefixo de URL de authentication
+    path('api/v1/', include('authentication.urls')),
+
     # prefixo de URL de generos
     path('api/v1/', include('genres.urls')),
 

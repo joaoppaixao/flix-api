@@ -6,4 +6,3 @@ from actors.models import Actor
 class ActorsAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'birthday', 'nationality')
     search_fields = ('name', 'nationality',)
-

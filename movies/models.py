@@ -6,7 +6,7 @@ from genres.models import Genre
 class Movie(models.Model):
     title = models.CharField(max_length=500)
     genre = models.ForeignKey(
-        Genre, 
+        Genre,
         on_delete=models.PROTECT,
         related_name='movies'
     )
@@ -16,5 +16,3 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.title
-    
-    

@@ -37,6 +37,7 @@ class MovieModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('Resumo não deve ser maior do que 500 caracteres.')
         return value
 
+
 class MovieListDetailSerializer(serializers.ModelSerializer):
     actors = ActorSerializer(many=True)
     genre = GenreSerializer()

@@ -43,3 +43,9 @@ class MovieModelSerializer(serializers.ModelSerializer):
         if len(value) > 500:
             raise serializers.ValidationError('Resumo não deve ser maior do que 500 caracteres.')
         return value
+
+class MovieListDetailSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Movie
+        fields = '__all__'
